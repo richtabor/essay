@@ -1,0 +1,130 @@
+/*
+Theme Name: Essay
+Description: Used to style the TinyMCE editor.
+*/
+
+
+/**
+ * Table of Contents:
+ *
+ * 1.0 - Import
+ * 2.0 - Body
+ * 3.0 - RTL
+ * 4.0 - Media Queries
+ */
+
+
+/**
+ * 1.0 Import
+ */
+
+
+@import url( '../style.css' );
+
+
+/**
+ * 2.0 Body
+ */
+
+
+body {
+	margin: 15px auto;
+	padding: 0 20px !important;
+	opacity: 1;
+	vertical-align: baseline;
+	max-width: 670px;
+	-webkit-font-smoothing: auto !important;
+}
+
+/*body.post-type-post > p:first-child:first-letter {
+	float: left;
+	font-family: Montserrat, sans-serif;
+	font-size: 2.875em;
+	font-weight: 700;
+	color: #242424;
+	font-size: 140px;
+	padding-top: .2em;
+	line-height: 70px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}*/
+
+.alignnone {
+	margin-left: -40% !important;
+}
+
+.alignnone,
+.alignnone img {
+	max-width: 180%;
+	width: 180%;
+}
+
+blockquote {
+	margin-left: -20% !important;
+	margin-right: -20% !important;	
+}
+
+
+/**
+ * 3.0 RTL
+ */
+
+
+body.rtl {
+	font-family: Arial, Tahoma, sans-serif;
+}
+
+.rtl ul,
+.rtl ol {
+	margin: 0 20px 28px 0;
+}
+
+.rtl ol {
+	margin-right: 24px;
+	margin-left: 0;
+}
+
+.rtl table th,
+.rtl table caption {
+	text-align: right;
+}
+
+
+/**
+ * 4.0 Media Queries
+ */
+
+@media screen and (max-width: 880px) {
+	blockquote {
+		margin-left: 0 !important;
+		margin-right:0 !important;
+	}
+}
+
+@media screen and (max-width: 680px) {
+	body {
+		margin: 15px;
+	}
+
+	body,
+	img,
+	.wp-caption {
+		max-width: 100%;
+	}
+
+	img,
+	.wp-caption {
+		width: auto !important;
+	}
+
+	.alignnone {
+		margin-left: -5% !important;
+	}
+
+	.alignnone,
+	.alignnone img {
+		max-width: 110%;
+		width: 110%;
+	}
+
+}

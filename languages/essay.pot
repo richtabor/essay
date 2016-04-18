@@ -1,0 +1,629 @@
+# Copyright (C) 2016 ThemeBeans
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Essay 1.0.0\n"
+"Report-Msgid-Bugs-To: http://themebeans.com/\n"
+"POT-Creation-Date: 2015-12-27 18:52:54+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: WP-Translations (http://wp-translations.org/)\n"
+"Language-Team: WP-Translations <wpt@wp-translations.org>\n"
+"X-Generator: grunt-wp-i18n 0.5.3\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:21
+msgid "Go back"
+msgstr ""
+
+#: 404.php:21
+msgid " or "
+msgstr ""
+
+#: 404.php:21
+msgid "go home"
+msgstr ""
+
+#: comments.php:35
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:22
+msgid "A %s Run Website"
+msgstr ""
+
+#: footer.php:31
+msgid "Powered by %s"
+msgstr ""
+
+#: footer.php:36
+msgid "To Top"
+msgstr ""
+
+#: functions.php:115
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:116
+msgid "Social Menu"
+msgstr ""
+
+#: functions.php:178
+msgid "Content Bottom 1"
+msgstr ""
+
+#: functions.php:180 functions.php:190
+msgid "Appears at the bottom of the content on pages."
+msgstr ""
+
+#: functions.php:188
+msgid "Content Bottom 2"
+msgstr ""
+
+#: functions.php:405
+msgid "Password:"
+msgstr ""
+
+#: functions.php:405
+msgid "Insert the password to view this post..."
+msgstr ""
+
+#: functions.php:405
+msgid "Submit"
+msgstr ""
+
+#: functions.php:454
+msgid "<b class=\"fn\">%s</b> <span class=\"says\">says:</span>"
+msgstr ""
+
+#: functions.php:456
+msgid "Author"
+msgstr ""
+
+#: functions.php:462
+#. translators: 1: date, 2: time
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: functions.php:462
+msgid "Edit"
+msgstr ""
+
+#: functions.php:467
+msgid "Awaiting moderation."
+msgstr ""
+
+#: header.php:30
+msgid "Navigation"
+msgstr ""
+
+#: inc/back-compat.php:33 inc/back-compat.php:43 inc/back-compat.php:56
+msgid ""
+"Essay requires at least WordPress version 4.2. You are running version %s. "
+"Please upgrade and try again."
+msgstr ""
+
+#: inc/customizer/customizer.php:43
+msgid "Settings"
+msgstr ""
+
+#: inc/customizer/customizer.php:44
+msgid ""
+"Customize various options throughout the theme with the settings within "
+"this panel."
+msgstr ""
+
+#: inc/customizer/customizer.php:63
+msgid "Layout"
+msgstr ""
+
+#: inc/customizer/customizer.php:75
+msgid "Layout Settings"
+msgstr ""
+
+#: inc/customizer/customizer.php:76
+msgid ""
+"<a target=\"_blank\" href=\"%1$s\" class=\"button button-secondary\">Get "
+"Access to Layout Settings</a>"
+msgstr ""
+
+#: inc/customizer/customizer.php:78
+msgid ""
+"<p>Select one of six grid layouts for the blogroll and index pages, and set "
+"a footer layout - with either one column or two.</p><ul><li>6 Grid Layout "
+"Options</li><li>Footer Widget Area</li><li>One or Two Column "
+"Footer</li></ul>"
+msgstr ""
+
+#: inc/customizer/customizer.php:88
+msgid "Hero"
+msgstr ""
+
+#: inc/customizer/customizer.php:100
+msgid "Hero Area Settings"
+msgstr ""
+
+#: inc/customizer/customizer.php:101
+msgid ""
+"<a target=\"_blank\" href=\"%1$s\" class=\"button button-secondary\">Get "
+"Access to Hero Area Settings</a>"
+msgstr ""
+
+#: inc/customizer/customizer.php:103
+msgid ""
+"<p>Customize your posts by enabling the fullscreen effect seen on the Essay "
+"demo, blurring filter, parallax effect and hero title "
+"emphasis.</p><ul><li>Hero Fullscreen Effect</li><li>Hero Blur "
+"Effect</li><li>Hero Parallax Effect</li><li>Hero Title Emphasis</li></ul>"
+msgstr ""
+
+#: inc/customizer/customizer.php:113
+msgid "Blog"
+msgstr ""
+
+#: inc/customizer/customizer.php:125
+msgid "Use drop caps"
+msgstr ""
+
+#: inc/customizer/customizer.php:126
+msgid ""
+"Enable drop caps on single post pages. A drop cap is a large capital letter "
+"at the beginning of the post content. "
+msgstr ""
+
+#: inc/customizer/customizer.php:138
+msgid "Show next post feature"
+msgstr ""
+
+#: inc/customizer/customizer.php:139
+msgid "Enable the next post pagination on the footer of the single post view."
+msgstr ""
+
+#: inc/customizer/customizer.php:151
+msgid "Show post categories"
+msgstr ""
+
+#: inc/customizer/customizer.php:152
+msgid "Show the post categories under author biography on single post pages."
+msgstr ""
+
+#: inc/customizer/customizer.php:164
+msgid "Show post tags"
+msgstr ""
+
+#: inc/customizer/customizer.php:165
+msgid "Show the post tags under author biography on single post pages."
+msgstr ""
+
+#: inc/customizer/customizer.php:175
+msgid "Footer"
+msgstr ""
+
+#: inc/customizer/customizer.php:187
+msgid "Powered by Essay"
+msgstr ""
+
+#: inc/customizer/customizer.php:199
+msgid "A WordPress run site. Nice."
+msgstr ""
+
+#: inc/customizer/customizer.php:209
+msgid "Colors"
+msgstr ""
+
+#: inc/customizer/customizer.php:220
+msgid "Accent Color"
+msgstr ""
+
+#: inc/customizer/customizer.php:232
+msgid "Advanced Color Settings"
+msgstr ""
+
+#: inc/customizer/customizer.php:233
+msgid ""
+"<a target=\"_blank\" href=\"%1$s\" class=\"button button-secondary\">Get "
+"Access to More Color Settings</a>"
+msgstr ""
+
+#: inc/customizer/customizer.php:235
+msgid ""
+"<p>Fine tune your site design with a number of color customization options "
+"for each section of the theme:</p><ul><li>Accent Colors</li><li>Hero Header "
+"Color</li><li>Body Text</li><li>Headings</li><li>Blockquotes</li><li>Footer "
+"Text</li><li>CSS3 Black/White Post Filter</li></ul>"
+msgstr ""
+
+#: inc/customizer/customizer.php:246
+msgid "Typography"
+msgstr ""
+
+#: inc/customizer/customizer.php:258
+msgid "Typography Settings"
+msgstr ""
+
+#: inc/customizer/customizer.php:259
+msgid ""
+"<a target=\"_blank\" href=\"%1$s\" class=\"button button-secondary\">Get "
+"Access to Typography Settings</a>"
+msgstr ""
+
+#: inc/customizer/customizer.php:261
+msgid ""
+"<p>You'll have access to 500+ Google Fonts along with font size, line "
+"height, letter spacing, and word spacing settings for each "
+"section:</p><ul><li>Body</li><li>Page Titles</li><li>Page Content</li></ul>"
+msgstr ""
+
+#: inc/customizer/customizer.php:281
+msgid "Site logo"
+msgstr ""
+
+#: inc/customizer/customizer.php:282
+msgid "Upload a logo to replace the default site name."
+msgstr ""
+
+#: inc/feedback.php:67
+msgid "%s years"
+msgstr ""
+
+#: inc/feedback.php:69
+msgid "a year"
+msgstr ""
+
+#: inc/feedback.php:75
+msgid "%s weeks"
+msgstr ""
+
+#: inc/feedback.php:77
+msgid "a week"
+msgstr ""
+
+#: inc/feedback.php:83
+msgid "%s days"
+msgstr ""
+
+#: inc/feedback.php:85
+msgid "a day"
+msgstr ""
+
+#: inc/feedback.php:91
+msgid "%s hours"
+msgstr ""
+
+#: inc/feedback.php:93
+msgid "an hour"
+msgstr ""
+
+#: inc/feedback.php:99
+msgid "%s minutes"
+msgstr ""
+
+#: inc/feedback.php:101
+msgid "a minute"
+msgstr ""
+
+#: inc/feedback.php:107
+msgid "%s seconds"
+msgstr ""
+
+#: inc/feedback.php:109
+msgid "a second"
+msgstr ""
+
+#: inc/feedback.php:158
+msgid "How is it going with the free version of %s?"
+msgstr ""
+
+#: inc/feedback.php:158
+msgid ""
+"If you're looking for more fantastic options, advanced customization "
+"options, one-click updates and theme support - upgrade to Essay Pro. "
+"<b>Instantly save 30% ($17 dollars)</b> on your purchase simply by clicking "
+"the link below."
+msgstr ""
+
+#: inc/feedback.php:159
+msgid "Upgrade to Essay Pro"
+msgstr ""
+
+#: inc/feedback.php:160
+msgid "Learn more"
+msgstr ""
+
+#: inc/feedback.php:161
+msgid "No thanks."
+msgstr ""
+
+#: inc/meta/meta-page.php:13
+msgid "Page Options"
+msgstr ""
+
+#: inc/meta/meta-page.php:18
+msgid "Hero Fullscreen Effect:"
+msgstr ""
+
+#: inc/meta/meta-page.php:19
+msgid ""
+"Enable the jquery fullscreen hero area on this page. This setting overrides "
+"the global option in the Customizerx."
+msgstr ""
+
+#: inc/meta/meta-post.php:13
+msgid "Video Post Format"
+msgstr ""
+
+#: inc/meta/meta-post.php:18
+msgid "Video URL"
+msgstr ""
+
+#: inc/meta/meta-post.php:19
+msgid "Upload a video to display in the hero area."
+msgstr ""
+
+#: inc/meta/meta-post.php:24
+msgid "Embed Code"
+msgstr ""
+
+#: inc/meta/meta-post.php:25
+msgid "Add a video embed iframe."
+msgstr ""
+
+#: inc/meta/metaboxes.php:75 inc/meta/metaboxes.php:123
+msgid "Insert"
+msgstr ""
+
+#: inc/meta/metaboxes.php:129 inc/meta/metaboxes.php:245
+msgid "Saving..."
+msgstr ""
+
+#: inc/meta/metaboxes.php:185
+msgid "Create Gallery"
+msgstr ""
+
+#: inc/meta/metaboxes.php:192 inc/meta/metaboxes.php:199
+#: inc/meta/metaboxes.php:308 inc/meta/metaboxes.php:310
+msgid "Edit Gallery"
+msgstr ""
+
+#: inc/meta/metaboxes.php:198
+msgid "Cancel"
+msgstr ""
+
+#: inc/meta/metaboxes.php:235
+msgid "Save Gallery"
+msgstr ""
+
+#: inc/meta/metaboxes.php:379
+msgid "Yes, please do"
+msgstr ""
+
+#: inc/template-tags.php:68
+msgid " Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/template-tags.php:116
+msgid "Comment navigation"
+msgstr ""
+
+#: inc/template-tags.php:119
+msgid "Older Comments"
+msgstr ""
+
+#: inc/template-tags.php:123
+msgid "Newer Comments"
+msgstr ""
+
+#: inc/template-tags.php:144
+msgid "Name *"
+msgstr ""
+
+#: inc/template-tags.php:148
+msgid "Email *"
+msgstr ""
+
+#: inc/template-tags.php:153
+msgid "Website"
+msgstr ""
+
+#: inc/upgrade/upgrade.php:45
+msgid ""
+"Thanks for choosing %1$s! Did you know that there's a \"Pro\" version of "
+"%1$s with some astonishingly neat features? %2$sClick here to learn more "
+"about %1$s Pro &rarr;%2$s"
+msgstr ""
+
+#: inc/upgrade/upgrade.php:89
+msgid ""
+"<a href=\"%1$s\" target=\"_blank\">Learn more about %2$s Pro</a> or <a "
+"href=\"%3$s\" target=\"_blank\">upgrade your theme now</a>."
+msgstr ""
+
+#: inc/upgrade/upgrade.php:115
+msgid "Pro"
+msgstr ""
+
+#: inc/widgets/widget-flickr.php:15
+msgid "Flickr Photos"
+msgstr ""
+
+#: inc/widgets/widget-flickr.php:16
+msgid "Add a Flickr feed widget."
+msgstr ""
+
+#: inc/widgets/widget-flickr.php:104
+msgid "Title / Intro:"
+msgstr ""
+
+#: inc/widgets/widget-flickr.php:113
+msgid "Flickr ID:"
+msgstr ""
+
+#: inc/widgets/widget-flickr.php:118
+msgid "Type:"
+msgstr ""
+
+#: inc/widgets/widget-flickr.php:126
+msgid "Display:"
+msgstr ""
+
+#: inc/widgets/widget-video.php:15
+msgid "Embedded Video"
+msgstr ""
+
+#: inc/widgets/widget-video.php:16
+msgid "Displays embedded video content."
+msgstr ""
+
+#: inc/widgets/widget-video.php:73
+msgid "Title:"
+msgstr ""
+
+#: inc/widgets/widget-video.php:82
+msgid "Video Embed Code:"
+msgstr ""
+
+#: index.php:64 search.php:36
+msgid "Previous page"
+msgstr ""
+
+#: index.php:65 search.php:37
+msgid "Next page"
+msgstr ""
+
+#: index.php:66 search.php:38 template-parts/content-page.php:30
+#: template-parts/content-single.php:28
+msgid "Page"
+msgstr ""
+
+#: search.php:17
+msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:11
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:12
+msgid "Click to search..."
+msgstr ""
+
+#: template-parts/biography.php:24
+msgid "Written by"
+msgstr ""
+
+#: template-parts/biography.php:29
+msgid "View all posts by %s"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-page.php:26 template-parts/content-single.php:24
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/hero.php:28
+msgid "Featured"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Essay"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://demo.themebeans.com/essay"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Essay is a handsome theme built for writers and blogging enthusiasts who "
+"are looking for a clever, elegant and bold platform to build their web "
+"presence. With its clean lines, purposeful design and headlining layout "
+"engine, Essay is the all-around perfect WordPress theme for your blog. "
+"There are many configuration options and layout modules available in the "
+"customizer. Essay will make your WordPress blog look fantasic everywhere."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "ThemeBeans"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://themebeans.com"
+msgstr ""
+
+#: comments.php:43
+msgctxt "comments title"
+msgid "One Thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:297
+#. translators: If there are characters in your language that are not supported
+#. by Fira Sans, translate this to 'off'. Do not translate into your own
+#. language.
+msgctxt "Fira Sans font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:302
+#. translators: If there are characters in your language that are not supported
+#. by Lekton, translate this to 'off'. Do not translate into your own language.
+msgctxt "Lato font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:307
+#. translators: If there are characters in your language that are not supported
+#. by Lekton, translate this to 'off'. Do not translate into your own language.
+msgctxt "Carrois Gothic SC font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/template-tags.php:56
+msgctxt "Used before post author name."
+msgid "Author"
+msgstr ""
+
+#: inc/template-tags.php:96
+msgctxt "Used before publish date."
+msgid "Posted"
+msgstr ""
+
+#: inc/template-tags.php:171 inc/template-tags.php:181
+msgctxt "Used between list items, there is a space after the comma."
+msgid " "
+msgstr ""
+
+#: inc/template-tags.php:174
+msgctxt "Used before category names."
+msgid "Categories"
+msgstr ""
+
+#: inc/template-tags.php:184
+msgctxt "Used before tag names."
+msgid "Tags"
+msgstr ""
+
+#: template-parts/hero.php:31
+msgctxt "%s = human-readable time difference"
+msgid "<h5 class=\"days-ago\">%s ago</h5>"
+msgstr ""

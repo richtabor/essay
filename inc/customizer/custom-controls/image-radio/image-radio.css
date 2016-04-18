@@ -1,0 +1,65 @@
+#customize-control-home_layout .image-radio + label[for=_customize-image-radios-home_layout_home_layout_4] {
+     margin-right: 0;
+}
+
+.image-radio { 
+     display: none!important; 
+}
+
+.customize-control-image_radio .description { 
+     margin-bottom: 15px; 
+}
+
+.image-radio + label {     
+     background-color: #424242;
+     border-radius: 3px;
+     cursor: pointer;
+     display: block;
+     float: left;
+     margin: 0 2% 2% 0;
+     max-width: 64px;
+     position: relative;
+     text-align: center;
+     width: 100%;
+     width: 23.5%;
+}
+
+.customize-control-image_radio label:before {
+     border: 2px solid rgba(0, 0, 0, 0.15);
+     border-radius: 3px;
+     bottom: 0;
+     content: '';
+     display: block;
+     height: 94%;
+     left: 0;
+     position: absolute;
+     right: 0;
+     top: 0;
+}
+
+.image-radio + label img {
+     display: block;
+     margin: 0 auto;
+}
+
+.image-radio:checked + label  { 
+     background-color: #00A0D2; 
+}
+
+#customize-control-blog_layout .image-radio + label[for=_customize-image-radios-blog_layout_blog-4] {
+     margin-right: 0;
+}
+
+.customize-control-image_radio img {
+     width: 64px!important;
+}
+
+#customize-control-footer_layout .image-radio + label {     
+     margin: 0 2% 2% 0;
+     max-width: none;
+     width: 49%;
+}
+
+#customize-control-footer_layout .image-radio + label[for=_customize-image-radios-footer_layout_footer-2] {     
+     margin-right: 0;
+}
