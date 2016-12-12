@@ -1,3 +1,106 @@
+
+/**
+ * 1.0 Feedback Notice
+ */
+
+
+.feedback-notice.updated {
+    border: 1px solid #dedede !important; 
+    box-shadow: none;
+    position: relative;
+}
+
+.feedback-notice.updated p {
+    display: inline-block;
+    position: relative;
+    top: -1px;
+}
+
+.feedback-notice.updated b {
+    color: #d54e21;
+}
+
+.feedback-notice.updated .button {
+    margin: 0 5px;
+}
+
+.feedback-notice.updated .dismiss {
+    position: absolute;
+    top: 15px;
+    padding: 0;
+    height: 20px;
+    width: 20px;
+    right: 10px;
+}
+
+.feedback-notice.updated b:before,
+.feedback-notice.updated .dismiss:before {
+    content: '\f155';
+    display: inline-block;
+    font: 400 20px/1 dashicons;
+    position: relative;
+    color: #a0a5aa;
+    vertical-align: middle;
+    speak: none;
+    position: relative;
+    top: -2px;
+    -moz-osx-font-smoothing: grayscale;
+     -webkit-font-smoothing: antialiased;
+}
+
+.feedback-notice.updated .dismiss:hover:before {
+    color: #0073aa;
+}
+
+.feedback-notice.updated b:before {
+    content: '\f155';
+    border-radius: 100%;
+    background-color: #d54e21;
+    font-size: 12px;
+    line-height: 21px;
+    height: 22px;
+    width: 22px;
+    color: #fff;
+    text-align: center;
+    margin-right: 5px;
+}
+
+@media screen and (max-width:1000px) {
+    .feedback-notice.updated {
+        text-align: center;
+        padding: 15px 10px!important;
+    }
+    
+    .feedback-notice.updated b,
+    .feedback-notice.updated p,
+    .feedback-notice.updated b:before {
+        display: block;
+    }
+
+    .feedback-notice.updated b:before {
+        margin: 0 auto 5px;
+        line-height: 26px;
+        height: 26px;
+        font-size: 14px;
+        width: 26px;
+    }
+
+    .feedback-notice.updated p {
+        padding: 0 2em;
+    }
+    
+
+    .feedback-notice.updated .button {
+        margin: 5px 0 0 0;
+    }
+
+    .feedback-notice.updated .dismiss {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+}
+
 /* Range control styles */
 li.customize-control.customize-control-range .ui-slider-handle {
 	position: absolute;

@@ -38,19 +38,11 @@ define( 'ESSAY_VERSION', '1.0.1' );
 
 
 /**
- * Check to see if updates are enabled.
- * If so, then we load the theme update class via admin.php.
- */
-define( 'BEAN_UPDATES', true );
-
-
-
-/**
  * Check to see if development mode is active.
  * If set the 'true', then serve standard theme files,
  * instead of minified .css and .js files.
  */
-define( 'ESSAY_DEBUG', false );
+define( 'ESSAY_DEBUG', true );
 
 
 
@@ -479,6 +471,20 @@ function essay_comments($comment, $args, $depth) {
 	<?php endif;
 }
 endif; // essay_comments
+
+
+
+if ( ! function_exists( 'essay_pingback_header' ) ) :
+/**
+ * Add a pingback url auto-discovery header for singularly identifiable articles.
+ */
+function essay_pingback_header() {
+    if ( is_singular() && pings_open() ) {
+        echo '<link rel="pingback" href="', bloginfo( 'pingback_url' ), '">';
+    }
+}
+add_action( 'wp_head', 'essay_pingback_header' );
+endif;
 
 
 

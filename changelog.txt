@@ -1,6 +1,10 @@
-Version: 1.0.1
-
 ** Essay Changelog **
+
+21 June 2016 - Version 1.0.2
+     * Moved tags out of the author biography
+     * Customizer PHP error fix     
+     * Updated Essay Pro dashboard notification    
+     * Updated languages
 
 10 January 2016 - Version 1.0.1
      * Cleaned up the Customizer

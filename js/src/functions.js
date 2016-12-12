@@ -5,22 +5,24 @@
 ( function( a ) {
 	"use strict";
 
-	var  body = a("body"),
-		b 	= a("#nav-btn"),
-		c 	= a("#fullscreen-nav"),
-		d 	= a(".site-hero"),
-		e 	= body.find(".entry-content"),
-		f 	= e.find(".alignnone"),
-		q 	= e.find("blockquote"),
-		s 	= a(".video-background.embedded iframe"),
-		sn 	= a("#social-navigation"),
-		cb   = a('.comments-btn'),
-		cl   = a('.comment-list'),
-		rb   = a('.respond-btn'),
-		cf   = a('.comment-respond'),
-		pm   = a('.primary-menu'),
+    var  body = a("body"),
+        b   = a("#nav-btn"),
+        c   = a("#fullscreen-nav"),
+        d   = a(".site-hero"),
+        e   = body.find(".entry-content"),
+        f   = e.find(".alignnone"),
+        q   = e.find("blockquote"),
+        s   = a(".video-background.embedded iframe"),
+        sn  = a("#social-navigation"),
+        cb   = a('.comments-btn'),
+        cl   = a('.comment-list'),
+        rb   = a('.respond-btn'),
+        cf   = a('.comment-respond'),
+        pm   = a('.primary-menu'),
+        active = ("active"),
+        preload = ('js--preload'),
 
-		dur = 200;
+        dur = 200;
 
 
 	/* Fullwidth '.alignnone' Images */ 
@@ -160,11 +162,6 @@
 		}
 	}, 10);
 
-	/* Add loading class */ 	
-	setTimeout(function() {
-	     body.addClass("loaded")
-	}, 20);
-
 	/* Navigation Button */ 
 	b.on("click", function(a) {
 		a.preventDefault(), body.toggleClass("open-nav"),
@@ -198,13 +195,13 @@
 			}, 20);
 		}
 
-		/* Fade out links */ 
-		function b() {  window.location = d } var d;
+        /* Fade out links */ 
+        function b() {  window.location = d, body.removeClass(preload), setTimeout(body.addClass(active), 200)} var d;
 
-		a("a:not(.sub-menu-link)").on("click", function(a) {
-			return "" == this.href || null == this.href ? void a.preventDefault() : void(-1 == this.href.indexOf("#") && -1 == this.href.indexOf("mailto:") && -1 == this.href.indexOf("javascript:") && "_blank" != this.target && (a.preventDefault(), d = this.href, 
-			body.removeClass("loaded"), setTimeout(b, 200)))
-		});
+        a("a:not(.sub-menu-link)").on("click", function(a) {
+            return "" == this.href || null == this.href ? void a.preventDefault() : void(-1 == this.href.indexOf("#") && -1 == this.href.indexOf("mailto:") && -1 == this.href.indexOf("javascript:") && "_blank" != this.target && (a.preventDefault(), d = this.href, 
+            body.addClass(preload), setTimeout(b, 0)))
+        });
 
 		/* Comments Reveal */ 	
 		cb.on('click', function(a) { 
@@ -273,5 +270,10 @@
 	a(window).scroll(function() {
 		m();
 	});
+
+    a(window).load(function() {
+        /* Remove loading class */    
+        setTimeout(function(){ body.removeClass(preload) }, 20); 
+    });
 
 } )( jQuery );

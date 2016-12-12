@@ -153,14 +153,13 @@ class ThemeBeans_Request_Feedback {
 			$no_bug_url = wp_nonce_url( admin_url( '?' . $this->nobug_option . '=true' ), 'review-nonce' );
 			$time = $this->seconds_to_words( time() - get_site_option( $this->slug . '-activation-date' ) );
 
-			echo '<div class="updated" style="border-color:#0073aa;">
-				<p>
-					<b>' . sprintf( __( 'How is it going with the free version of %s?', 'essay' ), $this->name ) . '</b> ' . __( 'If you\'re looking for more fantastic options, advanced customization options, one-click updates and theme support - upgrade to Essay Pro. <b>Instantly save 30% ($17 dollars)</b> on your purchase simply by clicking the link below.', 'essay' )  . '
-					<br/><br/><a class="button button-primary" href="' . esc_url( 'http://themebeans.com/checkout?edd_action=add_to_cart&download_id=76991&discount=EDMJKDF928' ) . '" target="_blank">' . __( 'Upgrade to Essay Pro', 'essay' ) . '</a>
-					<a style="margin-left: 3px; margin-right: 5px;" onclick="location.href=\'' . esc_url( $no_bug_url ) . '\';" class="button button-secondary" href="' . esc_url( PRO_INFO_URL ) . '" target="_blank">' . __( 'Learn more', 'essay' ) . '</a>
-					<a style="display: none;" href="' . esc_url( $no_bug_url ) . '" style="margin-left: 5px;">' . __( 'No thanks.', 'essay' ) . '</a>
-				</p>
-			</div>';
+			echo '<div class="updated feedback-notice">
+                    <p><b>'. __( 'Instantly save 10% on Essay Pro!</b> Just add Essay Pro to your cart and we\'ll automagically apply your discount.', 'essay' ) . '</p>
+                    <p>
+                    <a class="button button-secondary" href="' . esc_url( 'https://themebeans.com/themes/essay/#upsell' ) . '" target="_blank">' . __( 'Learn More', 'essay' ) . '</a>
+                    <a class="button button-primary" href="' . esc_url( PRO_UPGRADE_URL.'&discount=ESSAY_SAVE10' ) . '" target="_blank">' . __( 'Add to Cart - $59', 'essay' ) . '</a>
+                    </p>
+                </div>';
 		}
 
 	}

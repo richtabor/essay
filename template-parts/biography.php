@@ -30,9 +30,4 @@
 			</a>
 		</p><!-- .author-bio -->
 	</div><!-- .author-description -->
-
-	<div class="entry-categories">
-		<?php essay_entry_taxonomies(); ?>
-	</div>
-
 </div><!-- .author-info -->

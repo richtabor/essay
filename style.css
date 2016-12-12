@@ -594,14 +594,16 @@ html {
 body {
 	background: #fff;
 	/* Fallback for when there is no custom background color defined. */
-	opacity: 0;
 	-webkit-transition: opacity 0.25s ease-in 0.1s;
 	transition: opacity 0.25s ease-in 0.1s;
 }
 
-.loaded,
-.no-js body {
-	opacity: 1;
+.js--preload {
+    opacity: 0;
+}
+
+.no-js .js--preload {
+    opacity: 1;
 }
 
 ::-moz-selection {
@@ -2096,21 +2098,27 @@ article[class^="post-"]:after,
 	margin-right: 5px;
 }
 
+.entry-categories {
+    margin-top: -30px;
+    padding-bottom: 55px;
+    text-align: center;
+}
+
 .entry-categories a {
-	background-color: #f5f5f5;
-	border-radius: 3px;
-	color: #5d5d5d;
-	display: inline-block;
-	font-weight: 700;
-	margin-bottom: 2px;
-	padding: 6px 2px 4px 8px;
-	text-decoration: none;
-	-webkit-transition: 150ms background-color,150ms border-color,150ms color,150ms fill;
-	transition: 150ms background-color,150ms border-color,150ms color,150ms fill;
+    background-color: #f5f5f5;
+    border-radius: 3px;
+    color: #5d5d5d;
+    display: inline-block;
+    font-weight: 700;
+    margin-bottom: 2px;
+    padding: 6px 2px 4px 8px;
+    text-decoration: none;
+    -webkit-transition: 150ms background-color,150ms border-color,150ms color,150ms fill;
+    transition: 150ms background-color,150ms border-color,150ms color,150ms fill;
 }
 
 .entry-categories a:hover {
-	color: #fff;
+    color: #fff;
 }
 
 
