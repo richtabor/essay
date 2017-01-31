@@ -200,7 +200,7 @@ add_action( 'widgets_init', 'essay_widgets_init' );
 function essay_javascript_detection() {
 	echo "<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>\n";
 }
-add_action( 'wp_head', 'essay_javascript_detection', 0 );
+add_action( 'wp_enqueue_scripts', 'essay_javascript_detection', 0 );
 
 
 
