@@ -42,7 +42,9 @@ define( 'ESSAY_VERSION', '1.0.1' );
  * If set the 'true', then serve standard theme files,
  * instead of minified .css and .js files.
  */
-define( 'ESSAY_DEBUG', true );
+if ( ! defined( 'ESSAY_DEBUG' ) ) {
+    define( 'ESSAY_DEBUG', true );
+}
 
 
 
