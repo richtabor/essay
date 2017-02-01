@@ -231,7 +231,7 @@ function essay_scripts() {
 		
 	} else {
 		// Add the main minified stylesheet.
-		wp_enqueue_style('essay-minified-style', get_template_directory_uri(). '/style-min.css', false, '1.0', 'all');
+		wp_enqueue_style('essay-minified-style', get_theme_file_uri(). '/style-min.css', false, '1.0', 'all');
 	}
 
 	// Load the standard WordPress comments reply javascript.
@@ -253,23 +253,23 @@ function essay_scripts() {
 	if ( WP_DEBUG || SCRIPT_DEBUG || ESSAY_DEBUG ) {
 
 		// Load the Vague script, enabling the blur effect.
-		wp_enqueue_script( 'vague', get_template_directory_uri() . '/js/src/vague.js', array( 'jquery' ), ESSAY_VERSION, true );
+		wp_enqueue_script( 'vague', get_theme_file_uri() . '/js/src/vague.js', array( 'jquery' ), ESSAY_VERSION, true );
 
 		// Load the NProgress progress bar loader javascript.
-		wp_enqueue_script( 'nprogress', get_template_directory_uri() . '/js/src/nprogress.js', array( 'jquery' ), ESSAY_VERSION, true );
+		wp_enqueue_script( 'nprogress', get_theme_file_uri() . '/js/src/nprogress.js', array( 'jquery' ), ESSAY_VERSION, true );
 
 		// Load the FitVids responsive video javascript.
-		wp_enqueue_script( 'fitvids', get_template_directory_uri() . '/js/src/fitvids.js', array( 'jquery' ), ESSAY_VERSION, true );
+		wp_enqueue_script( 'fitvids', get_theme_file_uri() . '/js/src/fitvids.js', array( 'jquery' ), ESSAY_VERSION, true );
 
 		// Load the custom theme javascript functions.
-		wp_enqueue_script( 'essay-functions', get_template_directory_uri() . '/js/src/functions.js', array( 'jquery' ), ESSAY_VERSION, true );
+		wp_enqueue_script( 'essay-functions', get_theme_file_uri() . '/js/src/functions.js', array( 'jquery' ), ESSAY_VERSION, true );
 
 	} else {
 		// Load the combined javascript library.
-		wp_enqueue_script( 'essay-combined-scripts', get_template_directory_uri() . '/js/combined-min.js', array(), ESSAY_VERSION, true );
+		wp_enqueue_script( 'essay-combined-scripts', get_theme_file_uri() . '/js/combined-min.js', array(), ESSAY_VERSION, true );
 		
 		// Load the minified javascript functions.
-		wp_enqueue_script( 'essay-minified-functions', get_template_directory_uri() . '/js/functions-min.js', array( 'jquery' ), ESSAY_VERSION, true );
+		wp_enqueue_script( 'essay-minified-functions', get_theme_file_uri() . '/js/functions-min.js', array( 'jquery' ), ESSAY_VERSION, true );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'essay_scripts' );
