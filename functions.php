@@ -75,7 +75,7 @@ function essay_setup() {
 	 * If you're building a theme based on Essay, use a find and replace
 	 * to change 'essay' to the name of your theme in all the template files
 	 */
-	load_theme_textdomain( 'essay', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'essay', get_parent_theme_file_path() . '/languages' );
 	
 
 
@@ -514,33 +514,33 @@ endif;
 /**
  * Admin specific functions.
  */
-require get_template_directory() . '/inc/admin.php';
+require get_parent_theme_file_path() . '/inc/admin.php';
 
 
 
 /**
  * Customizer additions.
  */
-require get_template_directory() . '/inc/customizer/customizer.php';
-require get_template_directory() . '/inc/customizer/customizer-css.php';
-require get_template_directory() . '/inc/customizer/sanitization.php';
+require get_parent_theme_file_path() . '/inc/customizer/customizer.php';
+require get_parent_theme_file_path() . '/inc/customizer/customizer-css.php';
+require get_parent_theme_file_path() . '/inc/customizer/sanitization.php';
 
 
 
 /**
  * Custom template tags for this theme.
  */
-require get_template_directory() . '/inc/template-tags.php';
+require get_parent_theme_file_path() . '/inc/template-tags.php';
 
 
 /**
  * Load Jetpack compatibility file.
  */
-require get_template_directory() . '/inc/jetpack.php';
+require get_parent_theme_file_path() . '/inc/jetpack.php';
 
 
 /**
  * Add Widgets.
  */
-require get_template_directory() . '/inc/widgets/widget-flickr.php';
-require get_template_directory() . '/inc/widgets/widget-video.php';
+require get_parent_theme_file_path() . '/inc/widgets/widget-flickr.php';
+require get_parent_theme_file_path() . '/inc/widgets/widget-video.php';
