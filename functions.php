@@ -33,7 +33,9 @@
 /**
  * Set constant for version.
  */
-define( 'ESSAY_VERSION', '1.0.1' );
+if ( ! defined( 'ESSAY_VERSION' ) ) {
+	define( 'ESSAY_VERSION', '1.0.1' );
+}
 
 
 
