@@ -18,7 +18,7 @@ define( 'PRO_UPGRADE_URL', 'https://themebeans.com/checkout?edd_action=add_to_ca
 /**
  * Set constant for the informational post about the upgrade.
  */
-define( 'PRO_INFO_URL', 'http://themebeans.com/themes/introducing-essay-pro/' );
+define( 'PRO_INFO_URL', 'https://themebeans.com/themes/introducing-essay-pro/' );
 
 
 

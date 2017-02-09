@@ -28,7 +28,7 @@
 
 			$visibility = ( false == get_theme_mod( 'powered_by_essay' ) ) ? 'hidden' : '' ;
 			if ( get_theme_mod( 'powered_by_essay' ) || is_customize_preview() ) : ?>
-				<a href="http://themebeans.com/themes/essay" class="powered-by-essay" class="powered-by-essay <?php echo esc_html($visibility); ?>"><?php printf( __( 'Powered by %s', 'essay' ), 'Essay' ); ?>
+				<a href="https://themebeans.com/themes/essay" class="powered-by-essay" class="powered-by-essay <?php echo esc_html($visibility); ?>"><?php printf( __( 'Powered by %s', 'essay' ), 'Essay' ); ?>
 			<?php endif; ?>
 
 		</p><!-- .site-info -->
