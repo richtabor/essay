@@ -309,6 +309,6 @@ add_action( 'customize_register', 'bean_customize_register', 11 );
  * Binds JS handlers to make the Customizer preview reload changes asynchronously.
  */
 function essay_customize_preview_js() {
-	wp_enqueue_script( 'essay-customize-preview', get_theme_file_uri() . '/inc/customizer/js/customize-preview.js', array( 'customize-preview' ), ESSAY_VERSION, true );
+	wp_enqueue_script( 'essay-customize-preview', get_theme_file_uri( '/inc/customizer/js/customize-preview.js' ), array( 'customize-preview' ), ESSAY_VERSION, true );
 }
 add_action( 'customize_preview_init', 'essay_customize_preview_js' );
