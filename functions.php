@@ -233,7 +233,7 @@ function essay_scripts() {
 		
 	} else {
 		// Add the main minified stylesheet.
-		wp_enqueue_style('essay-minified-style', get_theme_file_uri( '/style-min.css' ), false, '1.0', 'all');
+		wp_enqueue_style('essay-style', get_theme_file_uri( '/style-min.css' ), false, '1.0', 'all');
 	}
 
 	// Load the standard WordPress comments reply javascript.
