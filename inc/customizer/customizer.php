@@ -27,10 +27,10 @@ function bean_customize_register( $wp_customize ) {
 	/**
 	 * Add custom controls.
 	 */
-	require get_template_directory() . '/inc/customizer/custom-controls/slider.php';
-	require get_template_directory() . '/inc/customizer/custom-controls/content.php';
-	require get_template_directory() . '/inc/customizer/custom-controls/range.php';
-	require get_template_directory() . '/inc/customizer/custom-controls/image-radio/image-radio.php';
+	require get_theme_file_path( '/inc/customizer/custom-controls/slider.php' );
+	require get_theme_file_path( '/inc/customizer/custom-controls/content.php' );
+	require get_theme_file_path( '/inc/customizer/custom-controls/range.php' );
+	require get_theme_file_path( '/inc/customizer/custom-controls/image-radio/image-radio.php' );
 	
 
 
@@ -309,6 +309,6 @@ add_action( 'customize_register', 'bean_customize_register', 11 );
  * Binds JS handlers to make the Customizer preview reload changes asynchronously.
  */
 function essay_customize_preview_js() {
-	wp_enqueue_script( 'essay-customize-preview', get_template_directory_uri() . '/inc/customizer/js/customize-preview.js', array( 'customize-preview' ), ESSAY_VERSION, true );
+	wp_enqueue_script( 'essay-customize-preview', get_theme_file_uri( '/inc/customizer/js/customize-preview.js' ), array( 'customize-preview' ), ESSAY_VERSION, true );
 }
 add_action( 'customize_preview_init', 'essay_customize_preview_js' );

@@ -33,7 +33,9 @@
 /**
  * Set constant for version.
  */
-define( 'ESSAY_VERSION', '1.0.1' );
+if ( ! defined( 'ESSAY_VERSION' ) ) {
+	define( 'ESSAY_VERSION', '1.0.1' );
+}
 
 
 
@@ -42,7 +44,9 @@ define( 'ESSAY_VERSION', '1.0.1' );
  * If set the 'true', then serve standard theme files,
  * instead of minified .css and .js files.
  */
-define( 'ESSAY_DEBUG', true );
+if ( ! defined( 'ESSAY_DEBUG' ) ) {
+    define( 'ESSAY_DEBUG', true );
+}
 
 
 
@@ -50,7 +54,7 @@ define( 'ESSAY_DEBUG', true );
  * Essay only works in WordPress 4.2 or later.
  */
 if ( version_compare( $GLOBALS['wp_version'], '4.2', '<' ) ) {
-	require get_template_directory() . '/inc/back-compat.php';
+	require get_theme_file_path( '/inc/back-compat.php' );
 }
 
 
@@ -73,7 +77,7 @@ function essay_setup() {
 	 * If you're building a theme based on Essay, use a find and replace
 	 * to change 'essay' to the name of your theme in all the template files
 	 */
-	load_theme_textdomain( 'essay', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'essay', get_theme_file_path( '/languages' ) );
 	
 
 
@@ -198,7 +202,7 @@ add_action( 'widgets_init', 'essay_widgets_init' );
 function essay_javascript_detection() {
 	echo "<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>\n";
 }
-add_action( 'wp_head', 'essay_javascript_detection', 0 );
+add_action( 'wp_enqueue_scripts', 'essay_javascript_detection', 0 );
 
 
 
@@ -229,7 +233,7 @@ function essay_scripts() {
 		
 	} else {
 		// Add the main minified stylesheet.
-		wp_enqueue_style('essay-minified-style', get_template_directory_uri(). '/style-min.css', false, '1.0', 'all');
+		wp_enqueue_style('essay-style', get_theme_file_uri( '/style-min.css' ), false, '1.0', 'all');
 	}
 
 	// Load the standard WordPress comments reply javascript.
@@ -251,23 +255,23 @@ function essay_scripts() {
 	if ( WP_DEBUG || SCRIPT_DEBUG || ESSAY_DEBUG ) {
 
 		// Load the Vague script, enabling the blur effect.
-		wp_enqueue_script( 'vague', get_template_directory_uri() . '/js/src/vague.js', array( 'jquery' ), ESSAY_VERSION, true );
+		wp_enqueue_script( 'vague', get_theme_file_uri( '/js/src/vague.js' ), array( 'jquery' ), ESSAY_VERSION, true );
 
 		// Load the NProgress progress bar loader javascript.
-		wp_enqueue_script( 'nprogress', get_template_directory_uri() . '/js/src/nprogress.js', array( 'jquery' ), ESSAY_VERSION, true );
+		wp_enqueue_script( 'nprogress', get_theme_file_uri( '/js/src/nprogress.js' ), array( 'jquery' ), ESSAY_VERSION, true );
 
 		// Load the FitVids responsive video javascript.
-		wp_enqueue_script( 'fitvids', get_template_directory_uri() . '/js/src/fitvids.js', array( 'jquery' ), ESSAY_VERSION, true );
+		wp_enqueue_script( 'fitvids', get_theme_file_uri( '/js/src/fitvids.js' ), array( 'jquery' ), ESSAY_VERSION, true );
 
 		// Load the custom theme javascript functions.
-		wp_enqueue_script( 'essay-functions', get_template_directory_uri() . '/js/src/functions.js', array( 'jquery' ), ESSAY_VERSION, true );
+		wp_enqueue_script( 'essay-functions', get_theme_file_uri( '/js/src/functions.js' ), array( 'jquery' ), ESSAY_VERSION, true );
 
 	} else {
 		// Load the combined javascript library.
-		wp_enqueue_script( 'essay-combined-scripts', get_template_directory_uri() . '/js/combined-min.js', array(), ESSAY_VERSION, true );
+		wp_enqueue_script( 'essay-combined-scripts', get_theme_file_uri( '/js/combined-min.js' ), array(), ESSAY_VERSION, true );
 		
 		// Load the minified javascript functions.
-		wp_enqueue_script( 'essay-minified-functions', get_template_directory_uri() . '/js/functions-min.js', array( 'jquery' ), ESSAY_VERSION, true );
+		wp_enqueue_script( 'essay-minified-functions', get_theme_file_uri( '/js/functions-min.js' ), array( 'jquery' ), ESSAY_VERSION, true );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'essay_scripts' );
@@ -310,6 +314,27 @@ function essay_fonts_url() {
 	return $fonts_url;
 }
 endif; // essay_fonts_url
+
+
+
+/**
+ * Add preconnect for Google Fonts.
+ *
+ * @param  array  $urls           URLs to print for resource hints.
+ * @param  string $relation_type  The relation type the URLs are printed.
+ * @return array  $urls           URLs to print for resource hints.
+ */
+function essay_resource_hints( $urls, $relation_type ) {
+    if ( wp_style_is( 'essay-fonts', 'queue' ) && 'preconnect' === $relation_type ) {
+        $urls[] = array(
+            'href' => 'https://fonts.gstatic.com',
+            'crossorigin',
+        );
+    }
+
+    return $urls;
+}
+add_filter( 'wp_resource_hints', 'essay_resource_hints', 10, 2 );
 
 
 
@@ -491,33 +516,33 @@ endif;
 /**
  * Admin specific functions.
  */
-require get_template_directory() . '/inc/admin.php';
+require get_theme_file_path( '/inc/admin.php' );
 
 
 
 /**
  * Customizer additions.
  */
-require get_template_directory() . '/inc/customizer/customizer.php';
-require get_template_directory() . '/inc/customizer/customizer-css.php';
-require get_template_directory() . '/inc/customizer/sanitization.php';
+require get_theme_file_path( '/inc/customizer/customizer.php' );
+require get_theme_file_path( '/inc/customizer/customizer-css.php' );
+require get_theme_file_path( '/inc/customizer/sanitization.php' );
 
 
 
 /**
  * Custom template tags for this theme.
  */
-require get_template_directory() . '/inc/template-tags.php';
+require get_theme_file_path( '/inc/template-tags.php' );
 
 
 /**
  * Load Jetpack compatibility file.
  */
-require get_template_directory() . '/inc/jetpack.php';
+require get_theme_file_path( '/inc/jetpack.php' );
 
 
 /**
  * Add Widgets.
  */
-require get_template_directory() . '/inc/widgets/widget-flickr.php';
-require get_template_directory() . '/inc/widgets/widget-video.php';
+require get_theme_file_path( '/inc/widgets/widget-flickr.php' );
+require get_theme_file_path( '/inc/widgets/widget-video.php' );

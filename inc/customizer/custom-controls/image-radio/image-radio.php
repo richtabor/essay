@@ -22,7 +22,7 @@ class Bean_Image_Radio_Control extends WP_Customize_Control {
      * Enqueue neccessary custom control stylesheet.
      */
      public function enqueue() {
-          wp_enqueue_style('image-radio', get_template_directory_uri() . '/inc/customizer/custom-controls/image-radio/image-radio.css');
+          wp_enqueue_style('image-radio', get_theme_file_uri( '/inc/customizer/custom-controls/image-radio/image-radio.css' ) );
      } //enqueue
 
 

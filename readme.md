@@ -19,7 +19,7 @@ Essay is a handsome theme built for writers and blogging enthusiasts who are loo
 * Post Formats
 * The GPL v2.0 or later license. :) Use it to make something cool.
 
-For more information about Essay please go to http://themebeans.com/themes/essay
+For more information about Essay please go to https://themebeans.com/themes/essay
 
 ## Installation ##
 

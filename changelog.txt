@@ -11,5 +11,5 @@
      * Updated languages
 
 07 January 2016 - Version 1.0.0
-     * Ported over from Essay Pro (http://themebeans.com/themes/essay/)
+     * Ported over from Essay Pro (https://themebeans.com/themes/essay/)
      * If you've purchased Essay, get in touch and we'll send you Essay Pro with a new license key.
