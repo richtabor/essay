@@ -520,4 +520,3 @@ require get_template_directory() . '/inc/jetpack.php';
  * Add Widgets.
  */
 require get_template_directory() . '/inc/widgets/widget-flickr.php';
-require get_template_directory() . '/inc/widgets/widget-video.php';
